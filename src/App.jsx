@@ -5,6 +5,7 @@ import {Provider} from "react-redux";
 import {store} from "./store/index.js";
 import {ModalDelivery} from "./components/ModalDelivery/ModalDelivery.jsx";
 import {Footer} from "./components/Footer/Footer.jsx";
+import {Analytics} from "@vercel/analytics/react";
 
 export const App = () => {
 
@@ -17,6 +18,7 @@ export const App = () => {
             </main>
             <Footer />
             <ModalDelivery />
+            <Analytics />
         </Provider>
     )
 }
